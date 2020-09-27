@@ -1,8 +1,7 @@
 
 import React, { useState } from 'react';
 
-import Buttons from './Buttons';
-import ClickMeCounter from './ClickMeCounter';
+import Page from './Page';
 
 function App() {
   const [state, setState] = useState({
@@ -18,16 +17,10 @@ function App() {
   }
 
   return (
-    <>
-      <ClickMeCounter
-        count={count}
-        onClick={handleClickButton}
-      />
-
-      <Buttons
-        onClick={handleClickButton}
-      />
-    </>
+    <Page
+      count={count}
+      onClick={handleClickButton}
+    />
   );
 }
 
