@@ -11,9 +11,9 @@ function App() {
 
   const { count } = state;
 
-  function handleClickButton(i) {
+  function handleClickButton(number = 1) {
     setState({
-      count: count + i,
+      count: count + number,
     });
   }
 
